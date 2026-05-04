@@ -1,0 +1,1 @@
+print(list(map(lambda a : a**2 if a%2==0 else 0, [12, 12, 34123, 45, 123])))
