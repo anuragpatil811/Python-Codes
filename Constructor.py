@@ -1,20 +1,25 @@
-class Mobile:
-    def __init__(self, brand, processor):
+'''
+class Car:
+    def __init__(self, name, color, brand):
+        self.name = name
+        self.color = color
         self.brand = brand
-        self.processor = processor
-    def update(self):               #Updating the object
-        self.processor = "Snapdragon 8gen 2"
-    def compare(self, other):
-        if self.processor == other.processor:
-            return True
+        return print(self.name, self.color, self.brand)
+car = Car("Seltos", "Black", "Kia")
+'''
+class Bank_App:
+    def __init__(self, name, account_no, mpin):
+        self.mpin = mpin
+        self.name = name
+        self.account_no = account_no
+        self.balance = 1000
+        return print(f'Welcome back dear customer {self.name}')
+    def add_money(self, amount, mpin):
+        self.mpin2 = mpin
+        self.amount = amount
+        if self.mpin2 == self.mpin:
+            self.balance = self.balance + self.amount 
         else:
-            return False   
-m1 = Mobile("Oneplus", "A15")
-m2 = Mobile("Apple", "A15")
-#m1.update()
-if m1.compare(m2):
-    print("Processor are same")
-else:
-    print("Processor are not same")
-print(m1.processor, m1.brand)
-print(m2.processor, m2.brand)
+            print("Ask Anoushka for mpin")
+virat = Bank_App("Virat Kohli", 18, 1234)
+virat.add_money(1000000, 1234)
