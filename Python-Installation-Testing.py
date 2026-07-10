@@ -1,1 +1,1 @@
-print("Python Has been installed successfully!")
+print("Python Has been installed successful")
